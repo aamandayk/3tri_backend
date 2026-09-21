@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -30,20 +31,37 @@
                         </ul>
 
                     </td>
-                    <td id = "segunda">
-                        <ul>
-                            <li>Português</li>
-                            <li>Física</li>
-                            <li>Inglês</li>
-                            <li>Química</li>
-                            <li>Geografia</li>
-                            <li>Matemática</li>
-                        </ul>
-                    </td>
-                </tr>
+                    <td id = "segunda-feira"></td>
+                    <td id = "terça-feira"></td>
+                    <td id = "quarta-feira"></td>
+                    <td id = "quinta-feira"></td>
+                    <td id = "sexta-feira"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> <button onclick="carregar_horario('segunda-feira')">Carregar</button></td>
+                        <td> <button onclick="carregar_horario('terça-feira')">Carregar</button></td>
+                        <td> <button onclick="carregar_horario('quarta-feira')">Carregar</button></td>
+                        <td> <button onclick="carregar_horario('quinta-feira')">Carregar</button></td>
+                        <td> <button onclick="carregar_horario('sexta-feira')">Carregar</button></td>
+                    </tr>
             </tbody>
         </table>
     </main>
     <footer></footer>
+
+    <script>
+
+        async function carregar_horario (dia) {
+            const coluna_dia = document.getElementById
+            try {
+                  const link = "http://localhost:3000/horario/"
+            } catch (erro) {
+                alert (erro)
+                coluna_dia.innerHTML = "erro ao carregar os horarios!"
+        }
+
+    }
+    </script>
 </body>
 </html>
